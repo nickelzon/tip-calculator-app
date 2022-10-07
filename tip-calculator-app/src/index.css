@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Gemunu Libre';
+  src: url(/public/Gemunu_Libre/GemunuLibre-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  font-family: 'Gemunu Libre';
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* border: solid 1px red; */
+}
+
+.root-container {
+  min-width: 200px;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: solid 1px red;
+}
+
+form {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  /* border: solid 1px red; */
+}
+
+.first-section {
+  border: solid 1px red;
+}
+
+.tip-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.3rem;
+  border: solid 1px red;
+}
+
+.number-of-people-section {
+  margin-block: 1rem;
+  border: solid 1px red;
+}
+
+.output-section {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(8, 85, 90);
+  border-radius: 0.2rem;
+  border: solid 1px red;
+}
+
+.buttons {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(8, 85, 90);
+  color: #fff;
+}
+
+.reset {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(0, 214, 203);;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 540px) {
+  
+  .root-container {
+    display: flex;
+  }
+
+  .output-section {
+    margin: 0 0.5rem;
+    min-width: 250px;
+  }
+
+}

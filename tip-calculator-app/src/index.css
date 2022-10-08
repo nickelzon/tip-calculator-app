@@ -73,6 +73,7 @@ body {
 }
 
 .output-section {
+  min-height: 240px;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -112,6 +113,7 @@ body {
 
 .reset {
   color: #fff;
+  min-height: 3rem;
 }
 
 h3 {

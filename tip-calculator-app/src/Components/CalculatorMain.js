@@ -62,11 +62,11 @@ const CalculatorMain = () => {
         <form className="output-section">
             <div className="total in-person">
                 <span>Tip Amount<br/>per person</span>
-                <h3>${(totalTip).toFixed(2)}</h3>
+                <h3>${(totalTip / people).toFixed(2)}</h3>
             </div>
             <div className="total all">
                 <span>Total tip:</span>
-                <h3>${(totalTip * people).toFixed(2)}</h3>
+                <h3>${(totalTip).toFixed(2)}</h3>
             </div>
             <button type="button" className="reset" onClick={() => reload()}>RESET</button>
         </form>
